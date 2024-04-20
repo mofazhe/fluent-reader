@@ -2,6 +2,9 @@ name: CI/CD Release Linux
 
 on:
     workflow_dispatch:
+    release:
+        types:
+            - published
 
 jobs:
     release-linux:
